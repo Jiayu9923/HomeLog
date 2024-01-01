@@ -14,6 +14,9 @@
 		E955CC0C2B3B19C9008A8544 /* HomeLogTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E955CC0B2B3B19C9008A8544 /* HomeLogTests.swift */; };
 		E955CC162B3B19C9008A8544 /* HomeLogUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E955CC152B3B19C9008A8544 /* HomeLogUITests.swift */; };
 		E955CC182B3B19C9008A8544 /* HomeLogUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E955CC172B3B19C9008A8544 /* HomeLogUITestsLaunchTests.swift */; };
+		E9BC84C12B3DAFBD009863D7 /* AddStock.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9BC84C02B3DAFBD009863D7 /* AddStock.swift */; };
+		E9BC84C32B3DB13F009863D7 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9BC84C22B3DB13F009863D7 /* Home.swift */; };
+		E9BC84C52B3DB150009863D7 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9BC84C42B3DB150009863D7 /* Profile.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +47,9 @@
 		E955CC112B3B19C9008A8544 /* HomeLogUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HomeLogUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E955CC152B3B19C9008A8544 /* HomeLogUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeLogUITests.swift; sourceTree = "<group>"; };
 		E955CC172B3B19C9008A8544 /* HomeLogUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeLogUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E9BC84C02B3DAFBD009863D7 /* AddStock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddStock.swift; sourceTree = "<group>"; };
+		E9BC84C22B3DB13F009863D7 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		E9BC84C42B3DB150009863D7 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +100,7 @@
 		E955CBF92B3B19C4008A8544 /* HomeLog */ = {
 			isa = PBXGroup;
 			children = (
+				E9BC84BB2B3D4D65009863D7 /* Views */,
 				E955CBFA2B3B19C4008A8544 /* HomeLogApp.swift */,
 				E955CBFC2B3B19C4008A8544 /* ContentView.swift */,
 				E955CBFE2B3B19C8008A8544 /* Assets.xcassets */,
@@ -125,6 +132,16 @@
 				E955CC172B3B19C9008A8544 /* HomeLogUITestsLaunchTests.swift */,
 			);
 			path = HomeLogUITests;
+			sourceTree = "<group>";
+		};
+		E9BC84BB2B3D4D65009863D7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E9BC84C02B3DAFBD009863D7 /* AddStock.swift */,
+				E9BC84C22B3DB13F009863D7 /* Home.swift */,
+				E9BC84C42B3DB150009863D7 /* Profile.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,7 +275,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				E955CBFD2B3B19C4008A8544 /* ContentView.swift in Sources */,
+				E9BC84C52B3DB150009863D7 /* Profile.swift in Sources */,
 				E955CBFB2B3B19C4008A8544 /* HomeLogApp.swift in Sources */,
+				E9BC84C32B3DB13F009863D7 /* Home.swift in Sources */,
+				E9BC84C12B3DAFBD009863D7 /* AddStock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
