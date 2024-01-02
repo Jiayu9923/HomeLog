@@ -25,3 +25,4 @@ class Message: Equatable {
         return lhs.date == rhs.date
     }
 }
+

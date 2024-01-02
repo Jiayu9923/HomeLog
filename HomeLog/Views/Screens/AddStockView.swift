@@ -14,7 +14,7 @@ struct AddStockView: View {
     @State private var isImagePickerPresented: Bool = false
     @State private var showResultSheet: Bool = false
     @State private var capturedImage: UIImage?
-    @State private var detectedObjects: [Observation] = []
+    @State private var detectedObjects: [Observa] = []
     let model = try! YOLOv3(configuration: MLModelConfiguration())
     var body: some View {
         VStack {
@@ -37,8 +37,8 @@ struct AddStockView: View {
                             .overlay {
                             GeometryReader { geometry in
                                 Path { path in
-                                    for observation in detectedObjects {
-                                        path.addRect(VNImageRectForNormalizedRect(observation.boundingBox, Int(geometry.size.width), Int(geometry.size.height)))
+                                    for observa in detectedObjects {
+                                        path.addRect(VNImageRectForNormalizedRect(observa.boundingBox, Int(geometry.size.width), Int(geometry.size.height)))
                                     }
                                 }
                                     .stroke(Color.red, lineWidth: 1.5)
@@ -76,11 +76,11 @@ struct AddStockView: View {
         let request = VNCoreMLRequest(model: vnCoreMLModel) { request, error in
             guard let results = request.results as? [VNRecognizedObjectObservation] else { return }
             detectedObjects = results.map { result in
-                guard let label = result.labels.first?.identifier else { return Observation(label: "", confidence: VNConfidence.zero, boundingBox: .zero) }
+                guard let label = result.labels.first?.identifier else { return Observa(label: "", confidence: VNConfidence.zero, boundingBox: .zero) }
                 let confidence = result.labels.first?.confidence ?? 0.0
                 let boundedBox = result.boundingBox
-                let observation: Observation = Observation(label: label, confidence: confidence, boundingBox: boundedBox)
-                return observation
+                let observa: Observa = Observa(label: label, confidence: confidence, boundingBox: boundedBox)
+                return observa
             }
             print(detectedObjects)
         }
@@ -96,7 +96,7 @@ struct AddStockView: View {
         }
     }
 }
-struct Observation {
+struct Observa {
     let label: String
     let confidence: VNConfidence
     let boundingBox: CGRect
