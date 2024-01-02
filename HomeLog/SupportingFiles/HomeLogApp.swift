@@ -11,10 +11,13 @@ import SwiftData
 //@available(iOS 17.0, *)
 @main
 struct HomeLogApp: App {
+    
+    @UIApplicationDelegateAdaptor private var appDelegate: AppDelegate
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
         }
-//        .modelContainer(for: DataItem.self)
+        .modelContainer(for: Dialog.self)
     }
 }

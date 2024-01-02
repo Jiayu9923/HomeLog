@@ -8,11 +8,23 @@
 import SwiftUI
 
 struct DialogView: View {
+    
+    var dialog: Dialog
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            ScrollView {
+                ForEach(dialog.messages.sorted {$0.date < $1.date}) { message in
+                    MessageView(message: message)
+                        .padding(4)
+                }
+            }
+        }
+        .toolbar(.hidden, for: .tabBar)
+        .navigationTitle(dialog.title)
     }
 }
 
-#Preview {
-    DialogView()
-}
+//#Preview {
+//    DialogView()
+//}

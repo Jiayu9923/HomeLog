@@ -9,7 +9,15 @@ import SwiftUI
 
 struct SuccessSaveDialogView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            Text("Success saving dialog to Favorites")
+                .padding()
+                .background(Color.green)
+                .foregroundColor(.white)
+                .font(.system(size: 14, weight: .semibold))
+                .clipShape(RoundedRectangle(cornerRadius: 12))
+            Spacer()
+        }
     }
 }
 

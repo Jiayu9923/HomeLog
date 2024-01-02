@@ -9,7 +9,18 @@ import SwiftUI
 
 struct ChatView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        TabView {
+            CreateChatView()
+                .tabItem {
+                    Label("Main", systemImage: "square.and.pencil")
+                }
+            
+            FavoritesListView()
+                .tabItem {
+                    Label("Favorites", systemImage: "heart")
+                }
+        }
+//        .modelContainer(for: Dialog.self)
     }
 }
 

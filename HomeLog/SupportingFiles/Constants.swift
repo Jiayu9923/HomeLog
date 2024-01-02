@@ -6,3 +6,7 @@
 //
 
 import Foundation
+
+final class Constants {
+    static var apiKey: String = "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"
+}

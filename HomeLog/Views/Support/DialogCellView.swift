@@ -8,11 +8,16 @@
 import SwiftUI
 
 struct DialogCellView: View {
+    
+    var dialog: Dialog
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            Text(dialog.title)
+        }
     }
 }
 
-#Preview {
-    DialogCellView()
-}
+//#Preview {
+//    DialogCellView()
+//}
