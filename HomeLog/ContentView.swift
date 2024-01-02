@@ -14,17 +14,22 @@ struct ContentView: View {
     var body: some View {
         
         TabView {
-            Home()
+            HomeView()
                 .tabItem() {
                     Image(systemName: "house.fill")
                     Text("Home")
                 }
-            AddStock()
+            AddStockView()
                 .tabItem() {
                     Image(systemName: "plus.circle")
                     Text("Add")
                 }
-            Profile()
+            ChatView()
+                .tabItem() {
+                    Image(systemName: "message.fill")
+                    Text("Chat")
+                }
+            ProfileView()
                 .tabItem() {
                     Image(systemName: "person.fill")
                     Text("Profile")

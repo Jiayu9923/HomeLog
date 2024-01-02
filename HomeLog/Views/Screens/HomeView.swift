@@ -9,7 +9,7 @@ import SwiftUI
 import SwiftData
 
 //@available(iOS 17.0, *)
-struct Home: View {
+struct HomeView: View {
     
 //    @Environment(\.modelContext) private var context
 //    
@@ -53,7 +53,7 @@ struct Home: View {
 //            }
 //            
 //        }
-        .padding()
+//        .padding()
     }
     
 //    func addItem() {
@@ -79,6 +79,6 @@ struct Home: View {
 //@available(iOS 17.0, *)
 struct Home_Previews: PreviewProvider {
     static var previews: some View {
-        Home()
+        HomeView()
     }
 }

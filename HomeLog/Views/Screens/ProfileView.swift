@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct Profile: View {
+struct ProfileView: View {
     var body: some View {
         ZStack {
             Color.green
@@ -21,6 +21,6 @@ struct Profile: View {
 
 struct Profile_Previews: PreviewProvider {
     static var previews: some View {
-        Profile()
+        ProfileView()
     }
 }

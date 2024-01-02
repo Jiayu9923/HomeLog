@@ -10,7 +10,7 @@ import CoreML
 import Vision
 
 
-struct AddStock: View {
+struct AddStockView: View {
     @State private var isImagePickerPresented: Bool = false
     @State private var showResultSheet: Bool = false
     @State private var capturedImage: UIImage?
@@ -103,7 +103,7 @@ struct Observation {
 }
 
 #Preview {
-    AddStock()
+    AddStockView()
 }
 
 struct ImagePicker: UIViewControllerRepresentable {
